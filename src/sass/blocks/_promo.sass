@@ -1,0 +1,36 @@
+.promo
+    background: url("../img/main_bg.jpg") center center/cover no-repeat
+    min-height: 100vh
+    padding-top: 205px
+    position: relative
+    z-index: 1
+
+    &__subtitle
+        position: relative
+        padding-left: 10px
+        @include before_circle
+    &__link
+        color: #fff
+        margin-right: 44px
+        font-weight: bold
+        &:hover
+            color: #fff
+            text-decoration: none
+    &__buttons
+        margin-top: 37px
+    .hamburger
+        position: absolute
+        top: 20px
+        right: 30px
+        height: 21px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-end
+        cursor: pointer
+        span
+            display: block
+            z-index: 5
+            background-color: #fff
+            height: 3px
+            width: 30px

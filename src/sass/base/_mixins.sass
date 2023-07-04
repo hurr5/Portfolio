@@ -1,0 +1,35 @@
+=before_c
+    &::before
+        content: ''
+        position: absolute
+        z-index: -1
+        top: -25%
+        left: 0
+        width: 36px
+        height: 36px
+        border-radius: 100%
+
+
+$blue-fade: linear-gradient(0.8turn,#9C5FBF, #3466DB)
+$green-fade: linear-gradient(0.3turn,#FFA501 -20%, #00e9e9 130%)
+$orange-fade: linear-gradient(0.5turn,#F7DF1E, #F15123)
+$red-fade: linear-gradient(0.8turn,#FBCB50, #EA9F73, #D87297, #DC6E81, #E36658)
+$yellow_w: #F8CE3D
+$brown_f: #CFA376
+$bgc: #E5E7E4
+        
+=before_circle
+    @include before_c
+    &::before        
+        background-color: #15D8D8
+
+
+=before_circle_bf
+    @include before_c
+    &::before        
+        background: $blue-fade
+
+=before_circle_gf
+    @include before_c
+    &::before
+        background: $green-fade

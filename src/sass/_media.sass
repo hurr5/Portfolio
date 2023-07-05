@@ -1,6 +1,9 @@
 @media (max-width: 1330px)
     .container
         width: 80%
+    .aboutme
+        &__grid
+            grid-template: 300px 300px/400px minmax(400px, auto)
 
 
 @media (max-width: 992px)
@@ -8,9 +11,29 @@
         left: 20px
         bottom: 10px
 
+
 @media (max-width: 768px)
+    .socials
+        display: none
+    .promo
+        padding-top: 195px
+        &__link
+            margin-right: 25px
+        &__title
+            line-height: 44px
+            font-size: 36px
+
 
 @media (max-width: 576px)
+    .promo
+        &__title
+            font-size: 26px
+            width: 300px
+    .menu
+        &__social
+            bottom: 100px
+
+
 
 
 

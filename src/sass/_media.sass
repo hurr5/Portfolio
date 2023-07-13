@@ -1,20 +1,48 @@
 @media (max-width: 1330px)
     .container
-        width: 80%
+        width: 85%
+    .socials
+        left: 30px
     .aboutme
         &__grid
-            grid-template: 300px 300px/400px minmax(400px, auto)
+            grid-template: 300px 300px/350px minmax(400px, auto)
+            .undergrid
+                grid-template: repeat(2,140px)/repeat(2,240px)
+                &__desc
+                    padding-left: 50px
+    .resume
+        &__wrapper
+            column-gap: 35px
+            padding: 60px 65px 0 15px
+
 
 
 @media (max-width: 992px)
+    .promo
+        .hamburger
+            right: 20px
     .socials
         left: 20px
         bottom: 10px
+    .aboutme
+        &__grid
+            grid-template: 260px 240px/ 75%
+            justify-content: center
+            &-img
+                display: none
+            .undergrid
+                justify-items: center
+    .resume
+        &__wrapper
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+
 
 
 @media (max-width: 768px)
     .socials
         display: none
+    .container
+        width: 95%
     .promo
         padding-top: 195px
         &__link
@@ -22,6 +50,21 @@
         &__title
             line-height: 44px
             font-size: 36px
+    .aboutme
+        min-height: 750px
+        padding-top: 80px
+        &__title
+            font-size: 24px
+            line-height: 60px
+        &__grid
+            grid-template: 300px 450px/85%
+            gap: 15px 69px
+            .undergrid
+                grid-template: repeat(3, 150px)/100%
+    .resume
+        padding-top: 40px
+
+
 
 
 @media (max-width: 576px)
@@ -32,8 +75,31 @@
     .menu
         &__social
             bottom: 100px
+        &__block
+            width: 300px
 
+    .resume
+        padding-top: 40px
 
+    .aboutme
+        min-height: 850px
+        padding-top: 80px
+        &__title
+            font-size: 22px
+            line-height: 60px
+        &__grid
+            gap: 30px 69px
+            grid-template: repeat(auto-fill, 385px 450px)/85%  
+            .undergrid
+                grid-template: repeat(auto-fill, 1fr)/100%
 
+@media (max-width: 320px)
+    .promo
+        &__title
+            width: 100%
+    .aboutme
+        padding-top: 20px
+        &__grid
+            grid-template: repeat(auto-fill,400px 450px)/100%
 
 

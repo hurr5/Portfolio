@@ -1,11 +1,15 @@
 const hamburger = document.querySelector('.hamburger'),
     menu = document.querySelector('.menu'),
-    closeEl = document.querySelector('.menu__close');
+    closeEl = document.querySelectorAll('.menu__close, .menu__overlay');
+    
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
 })
 
-closeEl.addEventListener('click', () => {
-    menu.classList.remove('active');
-})
+closeEl.forEach(function(element) {
+    element.addEventListener('click', function() {
+      menu.classList.remove('active');
+    });
+  });
+  
